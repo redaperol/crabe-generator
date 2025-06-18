@@ -6,3 +6,30 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;Add commentMore actions
+  border-radius: 8px;
+  border: none;
+}
+
+#Generate {
+  color: white;
+  background-color: #ff7b00;
+}
+
+#Copy{
+  color: white;
+  background-color: #008000;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: auto;
+}
