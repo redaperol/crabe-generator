@@ -1,18 +1,15 @@
 const adjectifs = [
-  "sympathique", "malicieux", "rapide", "roux", "farceur", "timide", "élégant",
-  "grognon", "ténébreux", "flamboyant", "sauvage", "craintif", "puissant",
-  "charmant", "colérique", "mystique", "joyeux", "paresseux", "pétillant",
-  "sérieux", "bruyant", "serein", "furtif", "adorable", "vif", "romantique"
+  "Sympathique", "Malicieux", "Rapide", "Roux", "Farceur", "Timide", "Élégant",
+  "Grognon", "Ténébreux", "Flamboyant", "Sauvage", "Craintif", "Puissant",
+  "Charmant", "Colérique", "Mystique", "Joyeux", "Paresseux", "Pétillant",
+  "Sérieux", "Bruyant", "Serein", "Furtif", "Adorable", "Vif", "Romantique"
 ];
 
-function toPascalCase(mot) {
-  return mot.charAt(0).toUpperCase() + mot.slice(1);
-}
 
 function genererCrabe() {
   const index = Math.floor(Math.random() * adjectifs.length);
   const adjectifChoisi = adjectifs[index];
-  const nom = "Crabe" + toPascalCase(adjectifChoisi);
+  const nom = "Crabe" + adjectifChoisi;
 
   const crabeElement = document.getElementById("crabe-name");
   const boutonCopier = document.querySelector("button[onclick='copierNom()']");
